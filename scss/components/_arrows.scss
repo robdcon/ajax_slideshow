@@ -1,0 +1,31 @@
+#next,#prev
+{
+	position: absolute;
+	background-color: transparent;
+	width: 34px;
+	height: 49px;
+	padding:0;
+}
+#next
+{
+
+	background-image: url(../images/icons/right-icon.png) ;
+	right: -30;
+
+	&:hover
+	{
+		background-image: url(../images/icons/right-icon-hover.png) ;
+	}
+}
+
+#prev
+{
+	background-image: url(../images/icons/left-icon.png) ;
+	left: -30;
+
+	&:hover
+	{
+		background-image: url(../images/icons/left-icon-hover.png) ;
+
+	}
+}

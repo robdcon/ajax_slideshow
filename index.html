@@ -1,0 +1,62 @@
+<html>
+
+	<head>
+
+		<title>Simple Slide Component using Ajax, JQuery, Browserify &amp; Sass</title>
+		
+		<meta name="description" value="Images are stored in a folder on the server. A json file contains information on each image including the URL. The slider makes use of a closure function to control the index and makes a call to the json file to retrieve data releative to the index value, then displays the information in the DOM. Styled with SCSS and compiled for production using browserify">
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<!-- Import Font -->
+		<link href='http://fonts.googleapis.com/css?family=Exo+2:400,600,800' rel='stylesheet' type='text/css'/>
+
+		
+	</head>
+
+	<body>
+
+		<main>
+		
+			<section id="landing-page" class="panel bg1">
+
+				<a href="#" id="slideshow-display"><h1 class="h1">Slideshow</h1></a>
+
+	
+				<div id="slideshow" class="slideshow hidden">
+
+					<div class="category-select">
+					<!-- Category Select - Match the ID of each button to the category key of the JSON file containing the image details -->
+					<a href="#" class="category-select h4" id="graphic_design">Graphics</a>
+					<a href="#" class="category-select h4" id="artwork">Artwork</a>
+					
+					</div>
+					<!-- Slide container containing an empty img element, the src attribute is set by the category selector & changed by the next/prev buttons -->
+					<div id="slide-container" class="slide-container hidden">
+
+						<a href="#" id="close">x</a>
+
+						<div  id="img-container">
+
+						</div>
+
+						<div class="slide-navigation">
+
+							<a href="#" id="next"></a>
+							<a href="#" id="prev"></a>
+
+						</div>
+
+					</div>
+
+				</div>
+	
+			</section>
+	
+		</main>
+
+		<script src="js/bundle.js?version=6"></script>
+
+	</body>
+
+</html>

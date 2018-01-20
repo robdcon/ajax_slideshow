@@ -1,0 +1,14 @@
+a
+{
+	color: $white;
+	text-decoration: none;
+	margin: .5em;
+	padding:.25em;
+
+	transition: color .25s linear;
+
+	&:hover
+	{
+		color: $dark-orange;
+	}
+}

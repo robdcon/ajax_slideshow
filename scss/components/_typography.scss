@@ -1,0 +1,21 @@
+$heading-font-family:'Exo 2', sans-serif;
+$heading-font-weight:'bold';
+$heading-font-color: $white;
+
+.h1, .h2, .h3, .h4, .h5, .h6 
+{ 
+	font-family: $heading-font-family; 
+	font-weight: $heading-font-weight; 
+	color: $heading-font-color
+}
+
+.h1, .h2 { line-height: 1.1; }
+.h3, .h4 { line-height: 1.3; }
+.h1 { font-size: 400%; letter-spacing: -2px; }
+.h2 { font-size: 250%; letter-spacing: -1px; }
+.h3 { font-size: 200%; }
+.h4 { font-size: 180%; }
+.h5 { font-size: 130%; }
+
+
+.italic { font-style: italic; }

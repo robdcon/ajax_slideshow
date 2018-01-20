@@ -1,0 +1,27 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "watchify js/main.js -o js/bundle.js -d",
+    "scss": "watch scss/main.scss:css/main.css",
+    "dev":"concurrently --kill-others \"npm run scss\" \"npm run bundle\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-request": "^0.3.3",
+    "jquery-browserify": "^1.8.1",
+    "superagent": "^3.8.2",
+    "underscore": "^1.8.3",
+    "watch": "^1.0.2",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+
+}
